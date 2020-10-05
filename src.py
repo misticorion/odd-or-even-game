@@ -1,5 +1,10 @@
 import random as r  
 
+print("Welcome to Odd OR Even game! \n")
+for i in range(0,3):
+    print(i);
+print("Get set go")
+
 dec1=input("Odd or Even :  ").lower()   
 t1=int(input("User Input: "))
 t2=r.randint(1,6)
