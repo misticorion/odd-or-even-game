@@ -1,10 +1,11 @@
-import random as r  #import random module to use the random function
+import random as r  
 
-dec1=input("Odd or Even :  ").lower()    #generalise to lower case
+dec1=input("Odd or Even :  ").lower()   
 t1=int(input("User Input: "))
 t2=r.randint(1,6)
 print(f"AI input: {t2}")
 toss=t1+t2
+
 if toss%2 == 0:
     dec="even"
 else:
