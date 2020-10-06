@@ -3,10 +3,12 @@ import random as r
 print("Welcome to Odd OR Even game! \n")
 for i in range(0,3):
     print(i);
-print("Get set go")
+print("Get set, go")
 
-dec1=input("Odd or Even :  ").lower()   
-t1=int(input("User Input: "))
+while dec1.lower() != "odd" and dec1.lower() != "even" and dec1.lower() != "o" and dec1.lower() != "e":
+    dec1=input("Odd or Even (Type in O, E, Odd or Even):  ").lower()
+while t1.isnumeric() == False:
+    t1=int(input("User Input: "))
 t2=r.randint(1,6)
 print(f"AI input: {t2}")
 toss=t1+t2
@@ -27,7 +29,8 @@ else:
 if play==1:
     runs1=0
     while True:
-        r1=int(input("User input: "))
+        while r1.isnumeric() == False:
+            r1=int(input("User input: "))
         r2=r.randint(1,6)
         print(f"AI input: {r2}")
         if r1==r2:
@@ -53,7 +56,8 @@ if play==1:
 if play==2:
     runs2 = 0
     while True:
-        r1 = int(input("User input: "))
+        while r1.isnumeric() == False:
+            r1 = int(input("User input: "))
         r2 = r.randint(1, 6)
         print(f"AI input: {r2}")
         if r1 == r2:
